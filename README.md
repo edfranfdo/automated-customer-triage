@@ -50,6 +50,13 @@ The system will be built using a modern AI stack:
 ## Evaluation Strategy
 I will assess effectiveness using **Classification Accuracy** and **Urgency Correlation**. A "Ground Truth" dataset of 50 expert-labeled tickets will serve as the benchmark. We will use **Promptfoo** to ensure accuracy remains >90% during prompt iterations.
 
+
+## To run the app locally
+Initialize Project: Run npx create-next-app@latest . and select TypeScript, Tailwind, and App Router.
+Environment Variable: Create a .env file and add OPENAI_API_KEY=your_key_here.
+Install Dependencies: npm install ai @ai-sdk/openai zod.
+Run: npm run dev and navigate to localhost:3000.
+
 ## Observability Plan
 I will use **LangSmith** to track:
 *   **Latency:** Ensuring triage happens in <2 seconds.
