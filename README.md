@@ -1,6 +1,14 @@
-Subject: AI Feedback Triage System - Project Proposal (README.md)
+Subject: AI Feedback Triage System (README.md)
 
-# AI Feedback Triage System: Project Proposal
+# AI Feedback Triage System: Project
+
+## 🎯 Project Objectives
+The primary objective of this project is to build an intelligent automation layer for customer support teams. By utilizing LLMs, the system aims to:
+*   **Automate Triage:** Reduce manual ticket sorting time by over 70%.
+*   **Ensure Accuracy:** Utilize Structured Outputs to maintain 100% data integrity for database ingestion.
+*   **Eliminate Hallucinations:** Use RAG to ground all suggested responses in verified company documentation.
+
+---
 
 ## Project Overview
 The **AI Feedback Triage System** is an automated web application designed to process, categorize, and prioritize incoming customer feedback (emails, reviews, and support tickets). 
@@ -62,3 +70,35 @@ I will use **LangSmith** to track:
 *   **Latency:** Ensuring triage happens in <2 seconds.
 *   **Cost:** Monitoring token usage per ticket.
 *   **Human Adoption:** Measuring how often agents accept the AI's suggested drafts versus rewriting them.
+
+
+## 📦 Key Deliverables
+
+### 1. Intelligent Triage Engine (Backend)
+*   **AI Pipeline:** A TypeScript-based processing engine built with the Vercel AI SDK.
+*   **Structured Output Module:** A Zod-validated schema that forces the LLM to return machine-readable JSON (Category, Urgency, Summary).
+*   **RAG Implementation:** A retrieval system that pulls context from a knowledge base to inform AI-generated drafts.
+
+### 2. Agent Command Center (Frontend)
+*   **Dynamic Dashboard:** A Next.js 14+ interface that displays triaged tickets in real-time.
+*   **Priority Queue:** A sorting algorithm that automatically moves "Urgency 5" tickets to the top of the agent's view.
+*   **Draft Review Interface:** A "Human-in-the-loop" UI where agents can edit and approve AI-generated replies before sending.
+
+### 3. Validation & Reliability Suite
+*   **Test Dataset:** A collection of realistic customer scenarios used to validate classification accuracy.
+*   **Observability Logs:** Integrated console tracing to monitor token usage, API latency, and model reasoning paths.
+*   **Error Handling:** Robust validation logic to catch and retry failed AI generations or schema mismatches.
+
+### 4. Project Documentation & Media
+*   **Complete Codebase:** A public GitHub repository organized with clean, modular folder structures.
+*   **Technical README:** A comprehensive guide covering the tech stack, setup instructions, and AI architecture.
+*   **Demo Presentation:** A 3-minute video walkthrough demonstrating the system solving real-world support emergencies.
+
+---
+
+## 🛠 Tech Stack
+*   **Language:** TypeScript
+*   **Framework:** Next.js 14+ (App Router)
+*   **AI Orchestration:** Vercel AI SDK / OpenAI API
+*   **Schema Validation:** Zod
+*   **Styling:** Tailwind CSS
