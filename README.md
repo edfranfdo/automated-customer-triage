@@ -2,6 +2,10 @@ Subject: AI Feedback Triage System (README.md)
 
 # AI Feedback Triage System: Project
 
+## 📝 Executive Summary
+The **AI Feedback Triage System** is an AI-native web application designed to help customer support teams manage high volumes of incoming feedback. By leveraging Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG), the system automatically categorizes, prioritizes, and drafts responses for support tickets, ensuring that critical issues are addressed instantly and accurately.
+
+
 ## 🎯 Project Objectives
 The primary objective of this project is to build an intelligent automation layer for customer support teams. By utilizing LLMs, the system aims to:
 *   **Automate Triage:** Reduce manual ticket sorting time by over 70%.
