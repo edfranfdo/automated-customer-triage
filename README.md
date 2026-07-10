@@ -106,3 +106,16 @@ I will use **LangSmith** to track:
 *   **AI Orchestration:** Vercel AI SDK / OpenAI API
 *   **Schema Validation:** Zod
 *   **Styling:** Tailwind CSS
+
+## Local Setup
+
+1. **Clone project:** `git clone https://github.com/edfranfdo/automated-customer-triage.git`
+2. **Enter directory:** `cd automated-customer-triage`
+3. **Install packages:** `npm install`
+4. **Configure API:** Create `.env.local` and add `OPENAI_API_KEY=your_key_here`
+5. **Start server:** `npm run dev`
+6. **View app:** Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+> [!note] 
+> For Windows users: If you encounter `EPERM` errors, ensure the project is NOT in a OneDrive-synced folder and run your terminal as Administrator.
+
